@@ -163,7 +163,7 @@ tipos_memoria.addEventListener('change',() =>{
         pizarraHTML.addEventListener('click',(e) =>{
             if(e.target.alt == pHTML){
                 alert(`acertaste tienes buena memoria: ${pHTML}`)
-            }else{
+            }else if(tipos_memoria.value == 'banderas'){
                 alert(`fallaste xxxxx es: ${e.target.alt}`)
             }
         })

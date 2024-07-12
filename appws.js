@@ -12,11 +12,11 @@ const letrasPorPalabrasRandom = Math.floor(Math.random() * letrasPorPalabras) + 
 
 for(let i = 0;i < 50;i++) {
     let palabra = ''
-    let cantidadDeLetras = Math.floor(Math.random() * arreglo.length) + 1
+    let cantidadDeLetras = Math.floor(Math.random() * letrasQwertyMedio.length) + 1
     let auxiliar = ''
     for(let i = 0;i<cantidadDeLetras;i++){
         const f = Math.floor(Math.random() * cantidadDeLetras )
-        auxiliar += arreglo[f]
+        auxiliar += letrasQwertyMedio[f]
     }
     palabra += auxiliar
     frase += palabra + ' '
